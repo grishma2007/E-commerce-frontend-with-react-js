@@ -1,0 +1,169 @@
+/* src/Pages/Wishlist/Wishlist.css */
+
+.wishlist-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    min-height: 60vh;
+}
+
+.wishlist-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.wishlist-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+/* --- GRID (Adjusted for smaller cards) --- */
+.wishlist-grid {
+    display: grid;
+    /* Changed from 280px to 240px to make cards smaller */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+    gap: 25px;
+}
+
+/* --- CARD --- */
+.wishlist-card {
+    border: 1px solid #f0f0f0;
+    transition: box-shadow 0.3s ease;
+    background: #fff;
+    position: relative;
+    border-radius: 8px; /* Optional: Slight rounding */
+    overflow: hidden;
+}
+
+.wishlist-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* --- IMAGE WRAPPER (Height reduced & Centering fixed) --- */
+.wishlist-img-wrapper {
+    position: relative;
+    /* Reduced height from 300px to 200px */
+    height: 200px; 
+    background: #f9f9f9;
+    width: 100%;
+    display: flex;
+    align-items: center;     /* Vertical Center */
+    justify-content: center; /* Horizontal Center */
+    padding: 20px;           /* Add padding so image doesn't touch edges */
+}
+
+.wishlist-img-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the whole image is visible */
+    mix-blend-mode: multiply; /* Removes white background if image has one */
+    display: block;
+}
+
+/* Remove Button */
+.btn-remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    color: #999;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+    z-index: 5; /* Ensure it stays on top */
+}
+
+.btn-remove:hover {
+    color: #ff4444;
+    transform: scale(1.1);
+}
+
+/* --- INFO SECTION --- */
+.wishlist-info {
+    padding: 15px;
+    text-align: center;
+}
+
+/* FIX: Target the anchor tag to remove blue underline */
+.wishlist-info a {
+    text-decoration: none !important;
+    color: inherit;
+    display: block; /* Makes the link behave correctly */
+}
+
+.wishlist-info h3 {
+    font-size: 1rem; /* Slightly smaller font */
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Hover effect for title */
+.wishlist-info a:hover h3 {
+    color: #555;
+}
+
+.wishlist-info .price {
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Move to Cart Button */
+.btn-move-cart {
+    width: 100%;
+    padding: 10px;
+    background: #111;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    transition: background 0.3s;
+    border-radius: 4px; /* Matches card style */
+}
+
+.btn-move-cart:hover {
+    background: #333;
+}
+
+/* --- EMPTY STATE --- */
+.wishlist-empty-container {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.empty-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn-browse {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 30px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
