@@ -73,15 +73,35 @@ const Contact = () => {
             </div>
 
             <div className="social-links">
-              <span>Follow Us</span>
-              <div className="social-icons">
-                
-       <FaXTwitter size={20}/>
-<FaInstagram size={20}/>
-<FaPinterestP size={20}/>
+  <span>Follow Us</span>
 
-              </div>
-            </div>
+  <div className="social-icons">
+    <a
+      href="https://twitter.com"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <FaXTwitter size={20} />
+    </a>
+
+    <a
+      href="https://instagram.com"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <FaInstagram size={20} />
+    </a>
+
+    <a
+      href="https://pinterest.com"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <FaPinterestP size={20} />
+    </a>
+  </div>
+</div>
+
           </div>
 
           <div className="contact-form-wrapper">
