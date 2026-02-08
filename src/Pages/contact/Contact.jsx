@@ -73,9 +73,9 @@ const Contact = () => {
             <div className="social-links">
               <span>Follow Us</span>
               <div className="social-icons">
-                <a href="#"><Instagram size={20} /></a>
-                <a href="#"><Facebook size={20} /></a>
-                <a href="#"><Twitter size={20} /></a>
+                <Instagram size={20} />
+                <Facebook size={20} />
+                <Twitter size={20} />
               </div>
             </div>
           </div>
