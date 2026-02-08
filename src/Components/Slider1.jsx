@@ -40,9 +40,9 @@ const Slider1 = () => {
             <p className="slider-subtitle">
               Elevate your look with our curated collection of Eyewear
             </p>
-            <a  className="slider-btn">
+            <div className="slider-btn">
               SHOP COLLECTION →
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -54,9 +54,9 @@ const Slider1 = () => {
             <p className="slider-subtitle">
               Discover the allure of our fashionable glasses
             </p>
-            <a className="slider-btn">
+            <div className="slider-btn">
               SHOP COLLECTION →
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -68,9 +68,9 @@ const Slider1 = () => {
             <p className="slider-subtitle">
               Step into the world of clarity and shopistication
             </p>
-            <a className="slider-btn">
+            <div className="slider-btn">
               SHOP COLLECTION →
-            </a>
+            </div>
           </div>
         </div>
       </div>

@@ -38,9 +38,9 @@ const FindYourFit = () => {
             <h4>{item.title}</h4>
             <p>{item.desc}</p>
 
-            <a href="#" className="fit-link">
+            <div className="fit-link">
               SHOP COLLECTION →
-            </a>
+            </div>
           </div>
         ))}
       </div>

@@ -23,6 +23,7 @@ const Blackbar=()=> {
     };
   }
 
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(getTimeRemaining());
