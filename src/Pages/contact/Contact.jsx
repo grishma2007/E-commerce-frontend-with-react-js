@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Instagram, Facebook, Twitter, ArrowRight } from 'lucide-react';
 import './Contact.css';
 import contact1 from "./../../assets/images/contact1.png"
+import { FaInstagram, FaPinterestP } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -73,9 +75,11 @@ const Contact = () => {
             <div className="social-links">
               <span>Follow Us</span>
               <div className="social-icons">
-                <Instagram size={20} />
-                <Facebook size={20} />
-                <Twitter size={20} />
+                
+       <FaXTwitter size={20}/>
+<FaInstagram size={20}/>
+<FaPinterestP size={20}/>
+
               </div>
             </div>
           </div>
