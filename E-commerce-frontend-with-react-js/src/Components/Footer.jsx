@@ -103,11 +103,11 @@ const Footer = () => {
             <p><strong>(212) 555-1234</strong></p>
             <p className="cta">Get direction →</p>
             <div className="socials">
-              <a className="social-btn" href="#" aria-label="Facebook"><FaFacebookF/></a>
-              <a className="social-btn" href="#" aria-label="X"><FaXTwitter/></a>
-              <a className="social-btn" href="#" aria-label="Instagram"><FaInstagram/></a>
-              <a className="social-btn" href="#" aria-label="TikTok"><FaTiktok/></a>
-              <a className="social-btn" href="#" aria-label="Pinterest"><FaPinterestP/></a>
+              <FaFacebookF/>
+              <FaXTwitter/>
+              <FaInstagram/>
+              <FaTiktok/>
+            <FaPinterestP/>
             </div>
           </div>
 

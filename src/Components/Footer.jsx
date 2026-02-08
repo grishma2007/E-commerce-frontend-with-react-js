@@ -107,7 +107,7 @@ const Footer = () => {
             <FaXTwitter/>
             <FaInstagram/>
             <FaTiktok/>           
-              <FaPinterestP/>
+            <FaPinterestP/>
             </div>
           </div>
 
