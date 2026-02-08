@@ -1,4 +1,3 @@
-import React from 'react';
 import { Award, Globe, PenTool, Smile } from 'lucide-react';
 import './about.css';
 import ab1 from "./../../assets/images/aboutus1.png"

@@ -1,5 +1,4 @@
 // src/Pages/Wishlist/Wishlist.jsx
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { useWishlist } from '../../Context/WishlistContext';
 import { useCart } from '../../Context/CartContext';

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FaBox, FaCreditCard, FaUndo, FaHeadset } from "react-icons/fa";
 
 const Features = () => {

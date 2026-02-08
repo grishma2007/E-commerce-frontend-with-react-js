@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
-import Header from "../Components/Header.jsx";
 import Slider1 from "../Components/Slider1.jsx";
 import Blackbar from "../Components/Blackbar.jsx";
 import Productcard from "../Components/Productcard.jsx";
 import Categories from "../Components/Categories.jsx";
-import Footer from "../Components/Footer.jsx";
 import Herosection from "../Components/Herosection.jsx";
 import Features from "../Components/Features.jsx";
 import FindYourFit from "../Components/Findyourfit.jsx";
@@ -13,12 +11,7 @@ import gl1 from "../assets/images/gl1.png";
 import gl2 from "../assets/images/gl2.png";
 import gl3 from "../assets/images/gl3.png";
 import gl4 from "../assets/images/gl4.png";
-import p1 from "../assets/images/p1.png";
-import p2 from "../assets/images/p2.png";
-import p3 from "../assets/images/p3.png";
-import p4 from "../assets/images/p4.png";
-import p5 from "../assets/images/p5.png";
-import p6 from "../assets/images/p6.png";
+
 import axios from 'axios';
 
 const Home = () => {

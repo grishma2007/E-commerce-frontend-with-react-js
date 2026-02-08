@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Instagram, Facebook, Twitter, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import './Contact.css';
 import contact1 from "./../../assets/images/contact1.png"
 import { FaInstagram, FaPinterestP } from 'react-icons/fa';
