@@ -7,7 +7,7 @@ const ProductGrid = ({ filters }) => { // <--- Receive filters prop
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products")
+      .get("https://https://e-commerce-backend-node-js-eyecore.vercel/product")
       .then((res) => {
         setProducts(res.data);
       })
@@ -43,7 +43,7 @@ const ProductGrid = ({ filters }) => { // <--- Receive filters prop
             id={item._id}
             name={item.name}
             price={`₹${item.price}`}
-            image={`http://localhost:5000/${item.image}`}
+            image={`https://eyecore-backend.onrender.com/${item.image}`}
           />
         ))
       ) : (
