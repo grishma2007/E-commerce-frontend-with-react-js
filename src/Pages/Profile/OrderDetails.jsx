@@ -13,13 +13,13 @@ const OrderDetails = () => {
   const getImgUrl = (imagePath) => {
     if (!imagePath) return "https://via.placeholder.com/150";
     if (imagePath.startsWith("http")) return imagePath; 
-    return `http://localhost:5000${imagePath}`; 
+    return `https://e-commerce-backend-node-js-eyecore.vercel.app/${imagePath}`; 
   };
 
   useEffect(() => {
     const fetchOrderDetails = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/orders/${orderId}`, {
+        const res = await axios.get(`https://e-commerce-backend-node-js-eyecore.vercel.app/api/orders/${orderId}`, {
           withCredentials: true,
         });
         setOrder(res.data);
@@ -36,7 +36,7 @@ const OrderDetails = () => {
   const handleCancel = async () => {
     if (!window.confirm("Are you sure you want to cancel this entire order?")) return;
     try {
-      await axios.put(`http://localhost:5000/api/orders/${orderId}/cancel`, 
+      await axios.put(`https://e-commerce-backend-node-js-eyecore.vercel.app/api/orders/${orderId}/cancel`, 
         { status: "Cancelled" }, 
         { withCredentials: true }
       );
@@ -51,7 +51,7 @@ const OrderDetails = () => {
   const handleExchange = async () => {
     if (!window.confirm("Do you want to request an exchange for this order?")) return;
     try {
-      await axios.put(`http://localhost:5000/api/orders/${orderId}/update-status`, 
+      await axios.put(`https://e-commerce-backend-node-js-eyecore.vercel.app/api/orders/${orderId}/update-status`, 
         { status: "Exchange Requested" }, 
         { withCredentials: true }
       );

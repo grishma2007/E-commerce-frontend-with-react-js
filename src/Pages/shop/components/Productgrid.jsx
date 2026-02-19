@@ -6,8 +6,7 @@ const ProductGrid = ({ filters }) => { // <--- Receive filters prop
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://e-commerce-backend-node-js-eyecore.vercel.app/product")
+    axios.get("https://e-commerce-backend-node-js-eyecore.vercel.app/products")
       .then((res) => {
         setProducts(res.data);
       })

@@ -20,7 +20,7 @@ const Home = () => {
 /* ----------------------------------------- ------------------------------------------------------------------------------------- */
 
 useEffect(() => {
-  axios.get("http://localhost:5000/products")
+  axios.get("https://e-commerce-backend-node-js-eyecore.vercel.app/products")
     .then((res) => setdata(res.data))
     .catch((err) => console.log(err));
 }, []);

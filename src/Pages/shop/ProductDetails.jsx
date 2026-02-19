@@ -29,8 +29,7 @@ const ProductDetails = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0); 
-    axios
-      .get(`http://localhost:5000/products/${id}`)
+ axios.get(`https://e-commerce-backend-node-js-eyecore.vercel.app/products/${id}`)
       .then((res) => {
         setProduct(res.data);
         setLoading(false);

@@ -19,15 +19,15 @@ const Profile = () => {
   const getImgUrl = (imagePath) => {
     if (!imagePath) return "https://via.placeholder.com/150";
     if (imagePath.startsWith("http")) return imagePath; 
-    return `http://localhost:5000${imagePath}`; 
+    return `https://e-commerce-backend-node-js-eyecore.vercel.app/${imagePath}`; 
   };
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const userRes = await axios.get("http://localhost:5000/me", { withCredentials: true });
+        const userRes = await axios.get("https://e-commerce-backend-node-js-eyecore.vercel.app/me", { withCredentials: true });
         setUser(userRes.data);
-        const orderRes = await axios.get("http://localhost:5000/api/orders/my-orders", { withCredentials: true });
+        const orderRes = await axios.get("https://e-commerce-backend-node-js-eyecore.vercel.app/api/orders/my-orders", { withCredentials: true });
         setOrders(orderRes.data);
         setLoading(false);
       } catch (err) {

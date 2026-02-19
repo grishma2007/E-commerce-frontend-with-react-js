@@ -59,7 +59,7 @@ const Auth = () => {
       if (isLogin) {
         // 🔐 LOGIN
         const res = await axios.post(
-          "http://localhost:5000/login",
+          "https://e-commerce-backend-node-js-eyecore.vercel.app/login",
           {
             email: formData.email,
             password: formData.password,
@@ -77,7 +77,7 @@ const Auth = () => {
 
       } else {
         // 📝 REGISTER
-        await axios.post("http://localhost:5000/register", {
+        await axios.post("https://e-commerce-backend-node-js-eyecore.vercel.app/register", {
           name: formData.name,
           email: formData.email,
           password: formData.password,

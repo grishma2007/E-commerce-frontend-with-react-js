@@ -56,7 +56,7 @@ const Checkout = () => {
  
   // ----------------------------------------------------------------------------------
   const checkLogin = async () => {
-    const res = await fetch("http://localhost:5000/info", {
+    const res = await fetch("https://e-commerce-backend-node-js-eyecore.vercel.app/info", {
       method: "GET",
       credentials: "include",
     });
@@ -74,7 +74,7 @@ const Checkout = () => {
   // ----------------------------------------------------------------------------------
   const placeOrder = async (method, razorpayPayment = null) => 
   {
-    const res = await fetch("http://localhost:5000/api/orders", {
+    const res = await fetch("https://e-commerce-backend-node-js-eyecore.vercel.app/api/orders", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -107,7 +107,7 @@ const Checkout = () => {
       try 
       {
         const res = await fetch
-        ("http://localhost:5000/api/payment/create-order",
+        ("https://e-commerce-backend-node-js-eyecore.vercel.app/api/payment/create-order",
           {
             method: "POST",
     credentials: "include",
@@ -127,7 +127,7 @@ const Checkout = () => {
           order_id: data.order.id,
           handler: async function (response) 
           {
-            const verifyRes = await fetch( "http://localhost:5000/api/payment/verify-payment",
+            const verifyRes = await fetch( "https://e-commerce-backend-node-js-eyecore.vercel.app/api/payment/verify-payment",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
