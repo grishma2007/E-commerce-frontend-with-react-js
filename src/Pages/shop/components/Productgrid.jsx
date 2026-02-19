@@ -7,7 +7,7 @@ const ProductGrid = ({ filters }) => { // <--- Receive filters prop
 
   useEffect(() => {
     axios
-      .get("https://https://e-commerce-backend-node-js-eyecore.vercel/product")
+      .get("https://e-commerce-backend-node-js-eyecore.vercel.app/product")
       .then((res) => {
         setProducts(res.data);
       })
