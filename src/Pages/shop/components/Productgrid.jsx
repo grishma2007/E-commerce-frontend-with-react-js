@@ -42,7 +42,7 @@ const ProductGrid = ({ filters }) => { // <--- Receive filters prop
             id={item._id}
             name={item.name}
             price={`₹${item.price}`}
-            image={`https://e-commerce-backend-self-five.vercel.app/${item.image}`}
+            image={item.image}
           />
         ))
       ) : (

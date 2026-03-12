@@ -142,7 +142,7 @@ const Header = () => {
                 id={item._id}
                 name={item.name}
                 price={`₹${item.price}`}
-                image={`http://localhost:5000/${item.image}`}
+               image={item.image}
               />
             ))}
           </div>

@@ -85,7 +85,7 @@ useEffect(() => {
       <div className="nr-grid">
         {Data.slice(0, 6).map((item) => (
           <Productcard 
-           img={`hthttps://e-commerce-backend-self-five.vercel.app/${item.image}`} pname={item.name} price={item.price}/>
+           img={item.image} pname={item.name} price={item.price}/>
         ))}
       </div>
     </section>
