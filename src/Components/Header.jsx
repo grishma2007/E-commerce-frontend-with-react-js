@@ -21,7 +21,7 @@ const Header = () => {
 
   useEffect(() => {
     axios
-      .get("https://e-commerce-backend-node-js-eyecore.vercel.app/products")
+      .get("https://e-commerce-backend-self-five.vercel.app/products")
       .then((res) => setProducts(res.data))
       .catch((err) => console.log("Error fetching products:", err));
   }, []);

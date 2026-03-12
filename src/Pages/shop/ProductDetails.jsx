@@ -42,7 +42,7 @@ const ProductDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/reviews/${id}`)
+      .get(`https://e-commerce-backend-node-js-eyecore.vercel.app/reviews/${id}`)
       .then((res) => setReviews(res.data))
       .catch((err) => console.error(err));
   }, [id]);
@@ -68,7 +68,7 @@ const ProductDetails = () => {
     }
     try {
       const res = await axios.post(
-        "http://localhost:5000/reviews",
+        "https://e-commerce-backend-node-js-eyecore.vercel.app/reviews",
         {
           productId: id,
           user: newReview.user,
@@ -95,7 +95,7 @@ const ProductDetails = () => {
   const handleAddToCart = () => {
     const itemToAdd = {
       ...product,
-      image: `http://localhost:5000/${product.image}`
+      image: `https://e-commerce-backend-self-five.vercel.app/${product.image}`
     };
     addToCart(itemToAdd);
   };
@@ -114,7 +114,7 @@ const ProductDetails = () => {
         <div className="pdp-image-section">
           <div className="main-image-box">
             <img 
-              src={`http://localhost:5000/${product.image}`} 
+              src={`https://e-commerce-backend-self-five.vercel.app/${product.image}`} 
               alt={product.name} 
               onError={(e) => { e.target.src = "https://via.placeholder.com/500"; }}
             />

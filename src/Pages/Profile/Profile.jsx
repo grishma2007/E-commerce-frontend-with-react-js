@@ -19,15 +19,15 @@ const Profile = () => {
   const getImgUrl = (imagePath) => {
     if (!imagePath) return "https://via.placeholder.com/150";
     if (imagePath.startsWith("http")) return imagePath; 
-    return `https://e-commerce-backend-node-js-eyecore.vercel.app/${imagePath}`; 
+    return `https://e-commerce-backend-self-five.vercel.app/${imagePath}`; 
   };
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const userRes = await axios.get("https://e-commerce-backend-node-js-eyecore.vercel.app/me", { withCredentials: true });
+        const userRes = await axios.get("https://e-commerce-backend-self-five.vercel.app/me", { withCredentials: true });
         setUser(userRes.data);
-        const orderRes = await axios.get("https://e-commerce-backend-node-js-eyecore.vercel.app/api/orders/my-orders", { withCredentials: true });
+        const orderRes = await axios.get("https://e-commerce-backend-self-five.vercel.app/api/orders/my-orders", { withCredentials: true });
         setOrders(orderRes.data);
         setLoading(false);
       } catch (err) {
@@ -61,7 +61,7 @@ const Profile = () => {
     if (!window.confirm("Are you sure you want to cancel this order?")) return;
 
     try {
-      await axios.put(`http://localhost:5000/api/orders/${orderId}/cancel`, 
+      await axios.put(`https://e-commerce-backend-self-five.vercel.app/api/orders/${orderId}/cancel`, 
         { status: "Cancelled" }, 
         { withCredentials: true }
       );

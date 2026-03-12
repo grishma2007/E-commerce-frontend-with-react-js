@@ -2,8 +2,8 @@ import { useState } from 'react';
 import './Auth.css'; 
 import axios from 'axios';
 import BgImage from "./../../assets/images/ig.png";
-import { useNavigate } from 'react-router-dom'; // 1. Import useNavigate
-import { useAuth } from '../../Context/AuthContext'; // 2. Import Auth Context
+import { useNavigate } from 'react-router-dom'; 
+import { useAuth } from '../../Context/AuthContext';
 
 const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -15,8 +15,8 @@ const Auth = () => {
 
   const [errors, setErrors] = useState({});
   
-  const navigate = useNavigate(); // 3. Initialize navigation
-  const { login } = useAuth();    // 4. Get login function from context
+  const navigate = useNavigate(); 
+  const { login } = useAuth();    
 
   const handleChange = (e) => {
     setFormData({
@@ -59,7 +59,7 @@ const Auth = () => {
       if (isLogin) {
         // 🔐 LOGIN
         const res = await axios.post(
-          "https://e-commerce-backend-node-js-eyecore.vercel.app/login",
+          "https://e-commerce-backend-self-five.vercel.app/login",
           {
             email: formData.email,
             password: formData.password,
@@ -77,7 +77,7 @@ const Auth = () => {
 
       } else {
         // 📝 REGISTER
-        await axios.post("https://e-commerce-backend-node-js-eyecore.vercel.app/register", {
+        await axios.post("https://e-commerce-backend-self-five.vercel.app/register", {
           name: formData.name,
           email: formData.email,
           password: formData.password,

@@ -20,7 +20,7 @@ const Home = () => {
 /* ----------------------------------------- ------------------------------------------------------------------------------------- */
 
 useEffect(() => {
-  axios.get("https://e-commerce-backend-node-js-eyecore.vercel.app/products")
+  axios.get("https://e-commerce-backend-self-five.vercel.app/products")
     .then((res) => setdata(res.data))
     .catch((err) => console.log(err));
 }, []);
@@ -85,7 +85,7 @@ useEffect(() => {
       <div className="nr-grid">
         {Data.slice(0, 6).map((item) => (
           <Productcard 
-           img={`http://localhost:5000/${item.image}`} pname={item.name} price={item.price}/>
+           img={`hthttps://e-commerce-backend-self-five.vercel.app/${item.image}`} pname={item.name} price={item.price}/>
         ))}
       </div>
     </section>
