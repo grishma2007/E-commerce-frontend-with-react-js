@@ -872,8 +872,7 @@ ul{
 
 /* -- -------------------------------------------------------------------------------- */
 .categories-bg{
-  min-height: 510px;
-  height: auto;
+  height: 510px;
   background: #EFEFEF;
   padding: 70px 0 0;
   font-family: "Gloock",serif;
@@ -887,7 +886,19 @@ ul{
   text-align: center;
   font-family: "Gloock",serif;
 }
-
+.content h5{
+  font-family: 'Gloock',serif;
+  font-size: 18px;
+}
+.content h6{
+  font-size: 14px;
+  font-family: 'AlbertSans',sans-serif;
+}
+@media (max-width: 640px) {
+  .categories-bg{
+    display: none;
+  }
+}
 
 /* -- -------------------------------------------------------------------------------- */
 /* ================= INSPIRATION SECTION ================= */
