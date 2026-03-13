@@ -54,10 +54,10 @@ const Footer = () => {
           <div className="section signup">
             <h3>Sign Up for Email</h3>
             <p>Sign up to get first dibs on new arrivals, sales, exclusive content, events and more!</p>
-            <div className="input-row">
+            {/* <div className="input-row">
               <input className="email" type="email" placeholder="Enter email address"/>
               <button className="btn">Subscribe</button>
-            </div>
+            </div> */}
           </div>
         </div>
 
