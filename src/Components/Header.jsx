@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { IoSearch, IoClose } from "react-icons/io5";
+import { IoSearch, IoClose, IoHomeOutline, IoHome } from "react-icons/io5";
 import { FaRegHeart, FaRegUser } from "react-icons/fa";
 import { CgShoppingBag } from "react-icons/cg";
+import { MdOutlineStorefront, MdStorefront } from "react-icons/md";
+import { RiArticleLine, RiArticleFill, RiContactsLine, RiContactsFill } from "react-icons/ri";
 import axios from "axios"; 
 import ProductCard from "../Pages/shop/components/Productcard";
 import { useCart } from "../Context/CartContext"; 
@@ -148,6 +150,44 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {/* Bottom Floating Nav — tablet & mobile only */}
+      <nav className="bottom-nav">
+        <NavLink to="/" end className={({ isActive }) => `bottom-nav-item ${isActive ? "active" : ""}`}>
+          {({ isActive }) => (
+            <>
+              {isActive ? <IoHome /> : <IoHomeOutline />}
+              <span>Home</span>
+            </>
+          )}
+        </NavLink>
+
+        <NavLink to="/shop" className={({ isActive }) => `bottom-nav-item ${isActive ? "active" : ""}`}>
+          {({ isActive }) => (
+            <>
+              {isActive ? <MdStorefront /> : <MdOutlineStorefront />}
+              <span>Shop</span>
+            </>
+          )}
+        </NavLink>
+
+        <NavLink to="/blogs" className={({ isActive }) => `bottom-nav-item ${isActive ? "active" : ""}`}>
+          {({ isActive }) => (
+            <>
+              {isActive ? <RiArticleFill /> : <RiArticleLine />}
+              <span>About</span>
+            </>
+          )}
+        </NavLink>
+
+        <NavLink to="/contact" className={({ isActive }) => `bottom-nav-item ${isActive ? "active" : ""}`}>
+          {({ isActive }) => (
+            <>
+              {isActive ? <RiContactsFill /> : <RiContactsLine />}
+              <span>Contact</span>
+            </>
+          )}
+        </NavLink>
+      </nav>
     </>
   );
 };
