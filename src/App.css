@@ -872,7 +872,8 @@ ul{
 
 /* -- -------------------------------------------------------------------------------- */
 .categories-bg{
-  height: 510px;
+  min-height: 510px;
+  height: auto;
   background: #EFEFEF;
   padding: 70px 0 0;
   font-family: "Gloock",serif;
