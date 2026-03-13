@@ -1,3 +1,4 @@
+import './App.css'
 const Categories = ({img,categorie,count}) => {
     const cardstyle = {
         Height: "300px",
