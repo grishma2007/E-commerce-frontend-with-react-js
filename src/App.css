@@ -894,7 +894,7 @@ ul{
   font-size: 14px;
   font-family: 'AlbertSans',sans-serif;
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .categories-bg{
     display: none;
   }
